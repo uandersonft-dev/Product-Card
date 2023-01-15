@@ -1,0 +1,107 @@
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --open-preview: url(./assets/360.png);
+    --close-preview: url(./assets/stroke.png);
+}
+
+
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#productCard{
+    width: 875px;
+    height: 498px;
+    border-radius: 9.6px;
+    background-color: #D9CDF7;
+
+    display: flex;
+    align-items: center;
+}
+
+#productImage{
+    width: 449px;
+    height: 253px;
+    position: relative;
+
+    margin-right: 13px;
+}
+
+#productImage img{
+    width: 100%;
+}
+
+
+.productPreview{
+    position: absolute;
+    width: 33px;
+    top: 8px;
+    right: 50px;
+    height: 23px;
+    background-image: var(--open-preview);
+    z-index: 1;
+    cursor:pointer;
+}
+
+#productDetails{
+    height: 100%;
+    width: 281px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+#productCode{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 300;
+    font-family: 'Loto', sans-serif;
+    color: #271A45;
+}
+
+#productName{
+    font-family: 'Crimson Pro', serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    color: #271A45;
+}
+
+#productPrice{
+    color: #271A45;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+#cartButton{
+    width: 148px;
+    height: 32px;
+    border: 0.5px solid #271A45;
+    border-radius: 999px;
+    background-color: #D9CDF7;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
